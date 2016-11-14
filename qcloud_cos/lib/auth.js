@@ -6,10 +6,10 @@ exports.AUTH_URL_FORMAT_ERROR = -1;
 exports.AUTH_SECRET_ID_KEY_ERROR = -2;
 
 exports.signMore = function(bucket, expired) {
-	return appSign(bucket, '', expired);
+    return appSign(bucket, '', expired);
 }
 exports.signOnce = function(bucket, fileid) {
-	return appSign(bucket, fileid, 0);
+    return appSign(bucket, fileid, 0);
 }
 
 function appSign(bucket, fileid, expired) {
@@ -24,13 +24,13 @@ function appSign(bucket, fileid, expired) {
     }
 
     var plainText = 'a='+conf.APPID+'&k='+secretId+'&e='+expired+'&t='+now+'&r='+rdm+'&f='+fileid+'&b='+bucket;
-    
+
     var data = new Buffer(plainText,'utf8');
-    
+
     var res = crypto.createHmac('sha1',secretKey).update(data).digest();
-    
+
     var bin = Buffer.concat([res,data]);
-    
+
     var sign = bin.toString('base64');
 
     return sign;
