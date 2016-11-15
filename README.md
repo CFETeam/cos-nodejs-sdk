@@ -1,18 +1,22 @@
 # qcloud_cos-node
+
 nodejs sdk for [腾讯云COS服务]
 
 ## 安装
-npm install qcloud_internal_cos
+
+npm install qcloud-internal-cos
 
 ## 指定您的配置
+
 修改conf.js中的配置信息或者如下设置
 ```javascript
 qcloud_cos.conf.setAppInfo('000000', 'xxxxxxxx', 'xxxxxxx');
 ```
 
 ## 程序示例
+
 ```javascript
-var qcloud = require('qcloud_internal_cos');
+var qcloud = require('qcloud-internal-cos');
 
 qcloud.conf.setAppInfo('100000', 'AKIDoooooooooooooooooooooooooooooooo', 'ROllllllllllllllllllllllllllllll');
 
@@ -54,8 +58,6 @@ var headers = {
         "Content-Type" : "application/json",
         "Content-Encoding" : "utf-8"
     };
-    
+
 qcloud_cos.cos.updateFile('0001', '123/test_slice.dat', 'newattr', 'eWRPrivate', headers, function(ret) {console.log(ret)});
-
 ```
-
