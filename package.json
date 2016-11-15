@@ -1,6 +1,6 @@
 {
   "name": "qcloud-internal-cos",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "cos sdk for qcloud",
   "main": "index.js",
   "scripts": {
