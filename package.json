@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CFETeam/qcloud_internal_cos.git"
+    "url": "git+https://github.com/CFETeam/qcloud-internal-cos.git"
   },
   "keywords": [
     "qcloud"
@@ -16,9 +16,9 @@
   "author": "CFETeam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CFETeam/qcloud_internal_cos/issues"
+    "url": "https://github.com/CFETeam/qcloud-internal-cos/issues"
   },
-  "homepage": "https://github.com/CFETeam/qcloud_internal_cos",
+  "homepage": "https://github.com/CFETeam/qcloud-internal-cos",
   "engines": [
     "node >= 0.4.7"
   ],
