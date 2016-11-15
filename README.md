@@ -2,7 +2,7 @@
 nodejs sdk for [腾讯云COS服务]
 
 ## 安装
-npm install qcloud_cos
+npm install qcloud_internal_cos
 
 ## 指定您的配置
 修改conf.js中的配置信息或者如下设置
@@ -12,7 +12,7 @@ qcloud_cos.conf.setAppInfo('000000', 'xxxxxxxx', 'xxxxxxx');
 
 ## 程序示例
 ```javascript
-var qcloud = require('qcloud_cos');
+var qcloud = require('qcloud_internal_cos');
 
 qcloud.conf.setAppInfo('100000', 'AKIDoooooooooooooooooooooooooooooooo', 'ROllllllllllllllllllllllllllllll');
 
